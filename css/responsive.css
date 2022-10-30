@@ -95,6 +95,7 @@
   .contact-img{
     margin-top: 45px;
   }
+  .accordian-section .section-padding,
   .network-img,
   .metaverse-img,
   .fun-facts-img,
@@ -175,6 +176,9 @@
 
   .network-text h1 {
     font-size: 28px;
+  }
+  .accordian-section .section-title{
+    margin-bottom: -50px;
   }
   .contact-form-1 h2{
     font-size: 35px;

@@ -218,6 +218,7 @@ h3 {
   color: var(--black-900);
 }
 
+
 /*-------------------------------
  09. =buttons
 ---------------------------------*/
@@ -492,7 +493,7 @@ h3 {
  11. =banner section
 ---------------------------------*/
 .banner-section {
-  background-image: url(../images/BG.png);
+  background-image: url(../images/BG\ 2.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -511,7 +512,7 @@ h3 {
   text-transform: capitalize;
 }
 .banner-text p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--white);
   font-weight: 400;
 }
@@ -610,7 +611,7 @@ h3 {
   opacity: 0;
 }
 .features .feature-item:hover .icon{
-  color: white;
+  color: var(--white);
   font-size: 20px;
 }
 .features .feature-item:hover .icon::before{
@@ -751,6 +752,22 @@ h3 {
   color: var(--white);
   line-height: 1.2;
   text-transform: capitalize;
+}
+
+/*-------------------------------
+ 25. =bai section
+---------------------------------*/
+.bai-section{
+  background-color: var(--black-100);
+}
+.bai-section .circular-img-circle {
+  background-color: var(--yellow-light);
+}
+
+.bai-section .sub-title{
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--bg-dark);
 }
 
 
@@ -895,9 +912,14 @@ h3 {
 
 
 
+
+
 /*-------------------------------
  21. =accordian section
 ---------------------------------*/
+.accordian-section .section-title{
+  margin-bottom: -50px;
+}
 .accordian{
   padding-bottom: 50px;
   display: block;
