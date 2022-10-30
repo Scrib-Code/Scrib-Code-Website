@@ -1,22 +1,4 @@
 
-
-
-/*---------------------------------
-testimonial slider
------------------------------------*/
-function testimonialSlider(){
-    const carouselOne = document.getElementById('carouselOne');
-    if(carouselOne){ /* if the element  exists*/
-        carouselOne.addEventListener('slid.bs.carousel', function () {
-            const activeItem = this.querySelector(".active");
-            document.querySelector(".js-testimonial-img").src = 
-            activeItem.getAttribute("data-js-testimonial-img");
-        })
-    }
-}
-testimonialSlider();
-
-
 /*---------------------------------
 header menu
 -----------------------------------*/
@@ -85,6 +67,47 @@ header menu
 
 })();
 
+
+/*---------------------------------
+accordian
+-----------------------------------*/
+$(document).ready(function(){
+    $(".card-header").click(function(){
+        // self clicking close
+        if($(this).next(".card-body").hasClass("active")){
+            $(this).next(".card-body").removeClass("active").slideUp()  
+            $(this).children("span").removeClass("fa-minus").addClass("fa-plus")
+        }
+        else{
+            $(".card .card-body").removeClass("active").slideUp()
+            $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
+            $(this).next(".card-body").addClass("active").slideDown()  
+            $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
+        }
+    })
+});
+
+
+/*------------------ Features carousel ---------------------- */
+
+$('.features-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+});
+
 /*---------------------------------
 sponsor
 -----------------------------------*/
@@ -120,24 +143,7 @@ responsive: [
 });
 
 
-/*---------------------------------
-accordian
------------------------------------*/
-$(document).ready(function(){
-    $(".card-header").click(function(){
-        // self clicking close
-        if($(this).next(".card-body").hasClass("active")){
-            $(this).next(".card-body").removeClass("active").slideUp()  
-            $(this).children("span").removeClass("fa-minus").addClass("fa-plus")
-        }
-        else{
-            $(".card .card-body").removeClass("active").slideUp()
-            $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
-            $(this).next(".card-body").addClass("active").slideDown()  
-            $(this).children("span").removeClass("fa-plus").addClass("fa-minus")
-        }
-    })
-})
+
 
 
 /*---------------------------------
@@ -152,3 +158,31 @@ window.addEventListener('scroll', function () {
     let windowPosition = window.scrollY > 200;
     header.classList.toggle('scrolling-active', windowPosition);
   })
+
+
+/*---------------------------------
+Features carousel
+-----------------------------------*/
+
+$('.features-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+});
+
+/*------------------ Page Scroll ---------------------- */
+$.scrollIt({
+    topOffset: -50
+});

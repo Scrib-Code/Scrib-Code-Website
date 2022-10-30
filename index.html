@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>www.validators.network</title>
+  <title>www.scribcode.com</title>
 
     <!-- Meta -->
     <meta charset="utf-8"/>
@@ -12,18 +12,23 @@
     <meta name="author" content="">
 
 
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-36x36.png">
-<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
-<link rel="manifest" href="images/favicon/site.webmanifest">
-
+<!-- Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="Images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="Images/favicon_io/site.webmanifest">
 
 <!-- bootstrap -->
-<link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--===============================================================================================-->
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 <!--===============================================================================================-->
 <!-- Fontawesome -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/all.css">
+<!--===============================================================================================-->
+<!-- Parallax -->
+<script src="parallax.js"></script>
 <!--===============================================================================================-->
 <!-- CSS -->
   <link rel="stylesheet" href="css/Style.css">
@@ -45,7 +50,7 @@
       <div class="container">
         <div class="header-main">
           <div class="header-logo">
-            <a href="#home"><img src="Images/Logo.png" class="logo"></a>
+            <a href="#home"><img src="Images/ScribCode.png" class="logo"></a>
           </div>
           <div class="open-nav-menu">
             <span></span>
@@ -59,17 +64,7 @@
             </div>
             <ul class="menu">
               <li class="menu-item"><a href="index.html">home</a></li>
-              <li class="menu-item"><a href="validator.html">validator school</a></li>
-              <li class="menu-item"><a href="ambassador.html">ambassador school</a></li>
-              <li class="menu-item"><a href="foundation.html">foundation</a></li>
-              <li class="menu-item menu-item-has-children">
-                <a href="#" data-toggle="sub-menu">about us <i class="plus"></i></a>
-                <ul class="sub-menu">
-                  <li class="menu-item"><a href="validators-details.html">validators details</a></li>
-                  <li class="menu-item"><a href="roadmap.html">roadmap</a></li>
-                  <li class="menu-item"><a href="vision.html">vision</a></li>
-                </ul>
-              </li>
+              <li class="menu-item"><a href="validator.html">networks</a></li>
               <li class="menu-item"><a href="contact.html">contact us</a></li>
             </ul>
           </nav>
@@ -80,20 +75,22 @@
     <!-- header ends-->
 
     <!--- banner Section Start -->
-    <section class="banner-section d-flex align-items-center">
+    <section class="banner-section d-flex align-items-center" id="home" data-scroll-index="0">
       <div class="container">
         <div class="row align-items-center align-content-center">
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="banner-text">
-              <h2 class="mb-3">Distributed Validators Synctems.</h2>
-              <h1 class="mb-3 text-capitalize">Decentralized Autonomous Synchronization</h1>
-              <p class="mb-4">Defining the future for those who will bring changes to this world</p>
-              <a href="#" class="btn btn-0">about us</a>
+              <h2 class="mb-3">your gateway to decentralization.</h2>
+              <h1 class="mb-3 text-capitalize">discover and explore the new era of web 3.0</h1>
+              <p class="mb-4">Secure networks and earn rewards from staking your crypto assets. Non-custodial.</p>
+              <div class="home-btn">
+                <a href="validator.html" class="btn btn-2">stake now <i class="fas fa-arrow-right"></i></a>
+            </div>
             </div>
           </div>
-          <div class="col-md-6 order-first order-md-last mb-5 mb-md-0">
+          <div class="col-md-7 order-first order-md-last mb-5 mb-md-0">
             <div class="banner-img">
-                  <img src="Images/Logo Ani.gif" alt="banner img">
+                  <img src="Images/Heros.gif" alt="banner img">
                 </div>
               </div>
             </div>
@@ -103,273 +100,195 @@
     </section>
     <!-- banner section end -->
 
-    <!--- Vision Section Start -->
-  <section class="vision-section section-padding" id="our-vision">
-    <div class="container">
-      <div class="row">
-        <div class="section-title vision-text">
-          <h2>DVS <span>ecosystem</span></h2>
-          <p>The word "Synctem" comes from the word "Synchronization". This is a system that didn't appear by anyone's will, but which is self-created in the process of synchronization.</p>
+
+
+    <!-- Features Section Start -->
+    <section class="features section-padding">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-8">
+                  <div class="section-title">
+                      <h2>our <span>features</span></h2>
+                  </div>
+              </div>
+          </div>
           <div class="row">
-            <div class="col-12 text-center mt-3">
-              <a href="#" target="_blank"  class="btn btn-2">learn more</a>
-            </div>
+              <div class="owl-carousel features-carousel">
+                  <div class="feature-item">
+                      <div class="icon"><i class="fa-solid fa-server"></i></div>
+                      <h3>proof of stake</h3>
+                      <p>We are committed to how this technology will change the way we trust, incentivize, pay and earn. We are devoted to help secure blockchains for decades to come.</p>
+                  </div>
+                  <div class="feature-item">
+                    <div class="icon"><i class="fa-solid fa-user-check"></i></div>
+                      <h3>onboarding</h3>
+                      <p>New technologies can be difficult at times - we're here to make you feel comfortable. We help you set up the tool to join the new frontier. Come explore with us.</p>
+                  </div>
+                  <div class="feature-item">
+                    <div class="icon"><i class="fa-solid fa-book"></i></div>
+                      <h3>education</h3>
+                      <p>Our experts across  web 3, metaverse and blender offer bootcamps, breakout sessions  and individual training that will take you from 0 to hero.</p>
+                  </div>
+                  <div class="feature-item">
+                      <div class="icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                      <h3>charity</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias similique totam nam omnis iure, iusto vero aliquid dolor fugit rem veritatis labore?</p>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </section>
-  <!--- Vision Section End -->
+  <!-- Feature Section End -->
 
-  <!-- testimonials section start -->
-  <!-- <section class="testimonials-section section-padding position-relative">
-    <div class="decoration-circles d-none d-lg-block">
-      <div class="decoration-circles-item"></div>
-      <div class="decoration-circles-item"></div>
-      <div class="decoration-circles-item"></div>
-      <div class="decoration-circles-item"></div>
+  <!-- Fun Facts Section Start -->
+  <section class="fun-facts section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center">
+                <div class="fun-facts-img">
+                    <img src="/Images/Beach.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-7">
+                <div class="section-title">
+                    <h2>fun <span>facts</span></h2>
+                </div>
+                <div class="fun-facts-text">
+                    <h4>We help investors and token holders profit from their assets via non-custodial staking. Join us, stake, govern, support and earn.</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="fun-fact-item style-1">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <span>Buy Crypto</span>
+                                <p>Buy and hold your crypto in your favourite wallet like KEPLR, MetaMask, Trust Wallet, MyEtherWallet, WalletConnect, CORE, etc.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="fun-fact-item style-2">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                                <span>Find and Stake</span>
+                                <p>We make staking easy. Browse our list of nodes, find your favourite and stake. Can't find what you want? Let us know on Telegram</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="fun-fact-item style-3">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                                <span>Get Rewards</span>
+                                <p>With us, your rewards keep growing and growing, benefit from multiple airdrops. You can claim your rewards at any time.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="fun-fact-item style-4">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                                <span>Governance</span>
+                                <p>We value our community. Governance tab is optional, but we encourage you to become an active member of decentralization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="decoration-imgs d-none d-lg-block">
-      <img src="Images/OpenTech_Staking.md@2x.png" alt="decoration img" class="decoration-imgs-item">
-      <img src="Images/cyberp3810.png" alt="decoration img" class="decoration-imgs-item">
-      <img src="Images/Imperator.md@2x.png" alt="decoration img" class="decoration-imgs-item">
-    </div>
+</section>
+<!-- Fun Facts Section End -->
+
+  <!--- Network Section Start -->
+  <section class="network-section section-padding" id="foundation" data-scroll-index="1">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="section-title text-center">
-            <h2><span>validators</span></h2>
-          </div>
+        <div class="section-title section-title-1">
+          <h2>validator</h2>
         </div>
       </div>
+      <div class="row">
+      <div class="network-text">
+        <h1>we're strong validator who help maintain a lot of networks</h1>
+        <a href="validator.html" class="btn btn-2">stake now <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="network-img">
+        <div class="network-img-inner">
+          <img src="images/BLOCKS.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--- Network Section End -->
+
+<!--- Contact Section Start -->
+<section class="contact-section section-padding">
+  <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="img-box rounded-circle position-relative">
-            <img src="Images/User_Icon.png" class="w-100 js-testimonial-img rounded-circle" alt="testimonial img">
+          <div class="section-title section-title-1">
+            <h2><span>contact</span> us</h2>
           </div>
-          <div id="carouselOne" class="carousel slide text-center" data-bs-ride="carousel">
-            <div class="carousel-inner mb-4">
-              <div class="carousel-item active" data-js-testimonial-img="Images/Imperator.md@2x.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Imperator</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/cyberG.md@2x.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>CyberG</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/DomaNodes.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>DomaNodes</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/Colinka.md@2x.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Colinka</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/POSTHUMAN.md@2x.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>POSTHUMAN</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/Godshunter.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Godshunter</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/stakr-space.md@2x.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Stakr.space</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/Paranormal Brothers.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Paranormal Brothers</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/79anvi.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>79anvi</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/papsan.md@2x.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Papsan</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/web34ever.md@2x.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Web34ever</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/Moonsoon.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>MoonSoon</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/VBLOHER.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Vbloher</h2>
-                </div>
-              </div>
-              <div class="carousel-item" data-js-testimonial-img="Images/cyberp3810.png">
-                <div class="testimonials-item">
-                  <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ad sapiente inventore nisi maxime obcaecati. Vel odio eos consectetur laboriosam!</p>
-                  <h2>Cyberp3810</h2>
-                </div>
-              </div>
+      </div>
+      <div class="row">
+          <div class="contact-img">
+            <img src="images/Phone.png" alt="">
+          </div>
+          <div class="contact-form-1">
+            <h2>Stay in <br> the loop.</h2>
+            <p>Subscribe to our newsletter and never miss a bang</p>
+            <input type="text" placeholder="Email Address...">
+            <button type="submit">Subscribe</button>
+          </div>
+      </div>
+  </div>
+</section>
+<!--- Contact Section End -->
+
+<!--- footer start -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <div class="footer-item">
+            <div class="footer-logo">
+              <a data-scroll-goto="0" href="index.html"><img src="images/ScribCode.png" class="footer-logo"></a>
             </div>
-            <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
-              <i class="fas fa-arrow-left"></i>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
-              <i class="fas fa-arrow-right"></i>
-              <span class="visually-hidden">Next</span>
-            </button> -->
-            <!-- <div class="row">
-              <div class="col-12 text-center mt-3">
-                <a href="#" target="_blank"  class="btn btn-1">learn more</a>
-              </div>
-            </div>
+             <p>Your gateway to decentralization. We help investors and token holders profit from their assets via non-custodial staking. Join us, stake, govern, support and earn.</p>
           </div>
         </div>
+        <div class="col-sm-6 col-lg-3">
+         <div class="footer-item">
+           <h3>quick links</h3>
+           <ul>
+             <li><a href="validator.html">Networks</a></li>
+             <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-sm-6 col-lg-3">
+         <div class="footer-item">
+           <h3>more</h3>
+           <ul>
+              <li><a href="contact.html">Training</a></li>
+              <li><a href="contact.html">Join Our Team</a></li>
+             <li><a href="#">info@scribcode.com</a></li>
+           </ul>
+         </div>
+       </div>
+       <div class="col-sm-6 col-lg-3">
+         <div class="footer-item">
+          <h3>join our community</h3>
+           <ul>
+             <li><a href="https://twitter.com/ScribCode"><i class="fab fa-twitter social-icon"></i>Twitter</a></li>
+             <li><a href="https://t.me/scribcode_update"><i class="fab fa-telegram social-icon"></i>Telegram</a></li>
+             <li><a href="https://scribcode.medium.com"><i class="fab fa-medium social-icon"></i>Medium</a></li>
+           </ul>
+         </div>
+       </div>
       </div>
     </div>
-  </section> -->
-  <!-- testimonials section end -->
-
-  <!--- Foundation Section Start -->
-  <section class="testimonials-section section-padding" id="foundation">
+  </div>
+  <div class="footer-bottom">
     <div class="container">
-      <div class="row">
-        <div class="section-title section-title-1">
-          <h2><span>validators</span></h2>
-        </div>
-      </div>
-      <div class="row">
-      <div class="foundation-text">
-        <h1>we're a community of strong validators who help maintain a lot of networks</h1>
-        <a href="validators-details.html" class="btn btn-1">learn more <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="foundation-img">
-        <div class="foundation-img-inner">
-          <img src="images/Foundation.png" alt="">
-        </div>
-      </div>
+      <p class="m-0 py-4 text-center">copyright &copy;2022 Scrib Code</p>
     </div>
-  </section>
-  <!--- Foundation Section End -->
-
-  <!--- Foundation Section Start -->
-  <section class="foundation-section section-padding" id="foundation">
-    <div class="container">
-      <div class="row">
-        <div class="section-title section-title-1">
-          <h2><span>sputnik</span> foundation</h2>
-        </div>
-      </div>
-      <div class="row">
-      <div class="foundation-text">
-        <h1>high technology and oppotunity for self-education</h1>
-        <h3>Defining the future for those who will bring changes to this world</h3>
-        <a href="foundation.html" class="btn btn-1">learn more <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="foundation-img">
-        <div class="foundation-img-inner">
-          <img src="images/Banner.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--- Foundation Section End -->
-
-  <!--- Sponsor section Start -->
-  <section class="sponsor-section section-padding" id="sponsor">
-    <div class="container">
-      <div class="row">
-      <div class="section-title">
-        <h2><span>networks</span> we validate</h2>
-      </div>
-      </div>
-      <div class="sponsor-logos">
-        <div class="slide"><img src="images/Kava.png"></div>
-        <div class="slide"><img src="images/KI Foundation.png"></div>
-        <div class="slide"><img src="images/Cosmos.png"></div>
-        <div class="slide"><img src="images/Mina.png"></div>
-        <div class="slide"><img src="images/Persistence.png"></div>
-        <div class="slide"><img src="images/secretnetwork.png"></div>
-        <div class="slide"><img src="images/Solana.png"></div>
-        <div class="slide"><img src="images/Starname.png"></div>
-        <div class="slide"><img src="images/Fetch.png"></div>
-        <div class="slide"><img src="images/Avalanche.png"></div>
-        <div class="slide"><img src="images/Certik.png"></div>
-        <div class="slide"><img src="images/Juno.png"></div>
-        <div class="slide"><img src="images/Akash.png"></div>
-        <div class="slide"><img src="images/Osmosis.png"></div>
-        <div class="slide"><img src="images/Regen.png"></div>
-      </div>
-  </section>
-  <!--- Sponsor section End -->
-
-  <!--- Footer Start -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-item footer-about">
-          <h2>about us</h2>
-          <p>Distributed Validators Synctems is the first and only validators school which will <br> help you acquire the necessary knowledge to validate blockchains, and will provide <br> full online support from the beginning to the launch of the validator.</p>
-          <div class="social-links">
-            <a href="https://twitter.com/synctems" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://t.me/DVSynctems" target="_blank"><i class="fab fa-telegram"></i></a>
-            <a href="https://github.com/Distributed-Validators-Synctems" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://discord.gg/aqUa4uEB" target="_blank"><i class="fab fa-discord"></i></a>
-            <a href="https://synctems.medium.com" target="_blank"><i class="fab fa-medium"></i></a>
-          </div>
-        </div>
-        <div class="footer-item footer-quick-links">
-        <h2>quick links</h2>
-        <ul>
-          <li><a href="https://github.com/SputnikNetwork" target="_blank">sputnik exchange</a></li>
-          <li><a href="https://github.com/Sputnik-Foundation" target="_blank">sputnik foundation</a></li>
-          <li><a href="https://github.com/Distributed-Validators-Synctems/Validator-School" target="_blank">get started</a></li>
-        </ul>
-      </div>
-      <div class="footer-item footer-contact">
-        <h2>contact us</h2>
-        <p><i class="fas fa-envelope"></i> dvs@cryptolab.net</p>
-      </div>
-      <div class="footer-item footer-newsletter">
-        <h2>newsletter</h2>
-        <form>
-          <div class="input-group">
-            <input type="text" placeholder="Your Email" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-1">subscribe</button>
-        </form>
-      </div>
-      </div>
-      <div>
-      <p class="text-light copy">Copyright © 2022 Distributed Validators Synctems.</p>
-      </div>
-    </div>
-  </footer>
-  <!--- Footer End -->
+  </div>
+</footer>
+<!--- footer end -->
 
 
 </div>
@@ -378,11 +297,23 @@
   
 
 
+
 <!--- Script Source Files -->
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- Jquery js -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!--===============================================================================================-->
+<!-- Popper js -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!--===============================================================================================-->
+<!-- Bootstrap -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<!-- Owl.carousel js -->
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<!--===============================================================================================-->
+<!-- Scrollit js -->
+<script type="text/javascript" src="js/scrollIT.min.js"></script>
+<!--===============================================================================================-->
 <script src="js/main.js"></script>
 <script src=""></script>
 <script src=""></script>

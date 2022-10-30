@@ -75,18 +75,31 @@
   .header .open-nav-menu{
     display: flex;
   }
-  .foundation-text h1 {
+  .network-text h1 {
     font-size: 40px;
   }
-  .foundation-text h3 {
-    font-size: 20px;
+
+  .contact-form-1{
+    font-size: 50px;
+    font-weight: 700;
   }
-  .foundation-text,
-  .foundation-img {
+  .network-text,
+  .network-img,
+  .contact-img,
+  .contact-form-1 {
     width: 100%;
   }
-  .foundation-img {
-    margin-top: 60px;
+
+  .network-img,
+  .metaverse-img,
+  .contact-img{
+    margin-top: 45px;
+  }
+  .network-img,
+  .metaverse-img,
+  .fun-facts-img,
+  .contact-img{
+    margin-bottom: 45px;
   }
   .about-text p {
     font-size: 20px;
@@ -109,25 +122,39 @@
   .box {
     padding: 20px 15px;
   }
-  .validator-text h1,
   .banner-text h1 {
     font-size: 45px;
   }
   .banner-text h2 {
     font-size: 18px;
   }
-  .foundation-text h1 {
+  .network-text h1 {
     font-size: 35px;
   }
-  .foundation-text h3 {
-    font-size: 18px;
+  .validator-network-text h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contact-form-1 h2{
+    font-size: 40px;
+    font-weight: 700;
   }
   .section-title h2,
   .section-title-1 h2 {
     font-size: 30px;
   }
+  .section-title .title,
+  h3,
+  .form-title,
+  .section-title .sub-title {
+    font-size: 22px;
+  }
   .section-padding {
     padding: 70px 0;
+  }
+  .form-title,
+  .section-title .sub-title {
+    font-size: 22px;
   }
   .btn {
     padding: 5px 10px;
@@ -137,25 +164,72 @@
 }
 
 @media (max-width: 575px) {
+  .banner-section {
+    background-image: url(../images/Mobile.png);
+  }
+
+  .header-logo a,
+  .footer-logo {
+    font-size: 22px;
+  }
+
+  .network-text h1 {
+    font-size: 28px;
+  }
+  .contact-form-1 h2{
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .footer-item {
+    width: 100%;
+  }
+  .btn-4 {
+    margin-left: 30%;
+  }
+  .footer-item {
+    text-align: center;
+  }
+  .footer-contact i{
+    padding-left: 40px;
+  }
+  .footer-contact p i {
+    position: absolute;
+  }
+}
+
+@media (max-width: 399px) {
+  .header .logo {
+    max-width: 150px;
+  }
   .header-logo a,
   .footer-logo {
     font-size: 22px;
   }
   
+  .banner-text h2 {
+    font-size: 20px;
+  }
+  .banner-text h1,
+  .validator-network-text h1 {
+    font-size: 35px;
+  }
+  .contact-form h2{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .contact-form-1 input {
+    font-size: 14px;
+  }
+  
+  .contact-form-1 button {
+    color: var(--white);
+    font-size: 14px;
+  }
 
-  .foundation-text h1 {
-    font-size: 28px;
+  .network-view img{
+    width: 50%;
   }
-  .foundation-text h3 {
-    font-size: 18px;
-  }
-  .footer-item {
-    width: 100%;
-  }
-  .about-us-text {
-    text-align: center;
-  }
-  .btn-4 {
-    margin-left: 30%;
+  .network-view h5 {
+    font-size: 20px;
   }
 }
